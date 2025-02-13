@@ -104,6 +104,7 @@
     <QtRcc Include="Lab8.qrc" />
     <QtUic Include="Lab8.ui" />
     <QtMoc Include="Lab8.h" />
+    <ClCompile Include="CEncryption.cpp" />
     <ClCompile Include="Lab8.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -111,6 +112,9 @@
     <MASM Include="intel.asm">
       <FileType>Document</FileType>
     </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CEncryption.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
