@@ -25,6 +25,7 @@ private slots:
     void on_copyButton_clicked();
     void on_pasteButton_clicked();
     void on_clearButton_clicked();
+    void on_radioButton_5_toggled(bool checked);
 private:
     Ui::Lab8Class ui;
     CEncryption cencr;

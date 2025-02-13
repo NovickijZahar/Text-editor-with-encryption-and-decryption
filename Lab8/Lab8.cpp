@@ -210,3 +210,20 @@ void Lab8::on_clearButton_clicked()
     ui.textBrowser->clear();
     ui.textBrowser_2->clear();
 }
+
+void Lab8::on_radioButton_5_toggled(bool checked)
+{
+    if (checked) 
+    {
+        ui.lineEdit->clear();
+        QRegExp regex(QString::fromWCharArray(L"[a-z]+"));
+        QRegExpValidator* validator = new QRegExpValidator(regex);
+        ui.lineEdit->setValidator(validator);
+    }
+    else 
+    {
+        QRegExp regex(QString::fromWCharArray(L"[a-zà-ÿ]+"));
+        QRegExpValidator* validator = new QRegExpValidator(regex);
+        ui.lineEdit->setValidator(validator);
+    }
+}
